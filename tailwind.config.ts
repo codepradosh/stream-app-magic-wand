@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,17 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Music genre colors
+				blues: '#1E88E5',
+				classical: '#FFC107',
+				country: '#FF9800',
+				disco: '#E91E63',
+				hiphop: '#9C27B0',
+				jazz: '#3F51B5',
+				metal: '#212121',
+				pop: '#FF4081',
+				reggae: '#4CAF50',
+				rock: '#F44336',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +96,23 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-ring': {
+					'0%': { transform: 'scale(0.8)', opacity: '0' },
+					'50%': { opacity: '0.5' },
+					'100%': { transform: 'scale(1.3)', opacity: '0' }
+				},
+				'wave': {
+					'0%': { transform: 'scaleY(1)' },
+					'50%': { transform: 'scaleY(0.6)' },
+					'100%': { transform: 'scaleY(1)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-ring': 'pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite',
+				'wave': 'wave 1s ease-in-out infinite'
 			}
 		}
 	},
