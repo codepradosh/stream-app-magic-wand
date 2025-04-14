@@ -61,7 +61,9 @@ const AudioUploader = () => {
                 <p className="text-sm text-muted-foreground mb-4">Supports WAV, MP3, OGG formats</p>
               </div>
               <Input id="audio-upload" type="file" className="hidden" />
-              <Button as="label" htmlFor="audio-upload">Select File</Button>
+              <label htmlFor="audio-upload">
+                <Button className="cursor-pointer">Select File</Button>
+              </label>
             </div>
           </div>
         </TabsContent>
